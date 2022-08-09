@@ -1,0 +1,165 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.backcover {
+  height: 98vh;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: -1;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Navbar */
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  margin: 40px 120px;
+}
+
+.logo {
+  height: 40px;
+}
+
+.nav-items {
+  display: flex;
+  color: #1f2873;
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.nav-item {
+  margin: 0 20px;
+  align-self: center;
+}
+
+.drop-btn {
+  display: none;
+}
+
+.signin-btn {
+  color: #ffffff;
+  background: linear-gradient(to right, #965cf2, #ef88db);
+  padding: 0px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 10px;
+  height: 20px;
+  align-self: center;
+}
+
+/* Intro Section */
+
+.intro-section {
+  display: flex;
+  margin: 0px 70px 0px 120px;
+}
+
+.left-section {
+  margin-top: 45px;
+  flex: 1.1;
+}
+
+.left-section h1 {
+  color: #3e4794;
+  font-size: 72px;
+  font-weight: 500;
+  margin: 40px 0;
+}
+
+.left-section h4 {
+  color: #1e2353;
+  font-weight: 100;
+  font-size: 14px;
+  line-height: 2;
+  width: 58%;
+  margin-bottom: 50px;
+}
+
+.learn-more-btn {
+  color: #ffffff;
+  background: linear-gradient(to right, #965cf2, #ef88db);
+  padding: 9px 25px;
+  font-size: 21px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  border: none;
+  border-radius: 22px;
+}
+
+/* imgs-div section */
+
+.imgs-div {
+  flex: 2;
+}
+
+.intro-img {
+  height: 85vh;
+}
+
+.vector-img {
+  position: absolute;
+  bottom: 15vh;
+  right: 55vw;
+}
+.vector-dot {
+  position: absolute;
+  bottom: 25vh;
+  right: 57vw;
+}
+
+/* Mobile Responsive */
+
+@media screen and (max-width: 1090px) {
+  .imgs-div {
+    display: none;
+  }
+
+  .left-section {
+    text-align: center;
+  }
+
+  .left-section h4 {
+    font-size: 20px;
+    width: 70%;
+    margin: 20px auto 50px auto;
+  }
+}
+
+@media screen and (max-width: 985px) {
+  /* Navbar */
+
+  nav .nav-items,
+  .signin-btn {
+    display: none;
+  }
+
+  .drop-btn {
+    display: inline-block;
+    align-self: center;
+  }
+
+  .drop-btn i {
+    font-size: 24px;
+  }
+
+  nav {
+    margin: 40px 90px;
+  }
+
+  .intro-section {
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 750px) {
+  nav {
+    margin: 40px 30px;
+  }
+}
