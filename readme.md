@@ -2,7 +2,7 @@
 
 ## Developer - Kshitij Ingale
 
- In this project i have learnt about CSS Position property.
+ In this project i have learnt about CSS Flex property.
 
  Time Taken = 2.5 hrs
 
